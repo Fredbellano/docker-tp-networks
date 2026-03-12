@@ -29,8 +29,13 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Pourquoi la base de donnees n'a-t-elle pas besoin d'etre exposee vers l'hote dans cette architecture ?
+    Parce qu’elle est seulement utilisée par le conteneur web dans le réseau Docker, donc elle n'a pas besoin d'être accessible depuis l’extérieur
+
 - En quoi le reseau personnalise simplifie-t-il la communication entre services ?
+    Les conteneurs peuvent communiquer directement entre eux sur le même réseau et utiliser leur nom au lieu d’une adresse IP
+
 - Que se passerait-il si le volume n'etait pas reutilise apres recreation du conteneur MySQL ?
+    Les données seraient perdues car elles étaient stockées dans le conteneur supprimé
 
 ## Criteres de validation
 
