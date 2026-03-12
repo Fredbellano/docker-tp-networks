@@ -15,6 +15,8 @@ Vous devez le rendre accessible depuis votre machine sur un port different et ob
 4. Afficher les ports publies du conteneur.
 5. Relancer le meme service avec une publication restreinte a `127.0.0.1`.
 6. Comparer ce que vous observez avec une simple declaration `EXPOSE` dans une image.
+C'est accessible depuis l'extérieur
+
 7. Nettoyer les conteneurs utilises.
 
 Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
@@ -22,8 +24,13 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Quelle est la difference entre le port hote et le port conteneur ?
+Le port hote est le point d'entré avec le reste du réseau et le port conteneur c'est pour le réseau intérieur.
+
 - Pourquoi `EXPOSE` ne suffit-il pas a rendre le service accessible ?
+Elle indique seulement le port exposé, c'est purement déclaratif
+
 - Dans quel cas limiter l'ecoute a `127.0.0.1` est-il utile ?
+Pour la sécurité et du dev local
 
 ## Criteres de validation
 

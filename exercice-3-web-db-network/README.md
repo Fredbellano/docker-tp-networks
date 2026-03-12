@@ -29,8 +29,13 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Pourquoi la base de donnees n'a-t-elle pas besoin d'etre exposee vers l'hote dans cette architecture ?
+Pour la sécurité et éviter des conflits
+
 - En quoi le reseau personnalise simplifie-t-il la communication entre services ?
+Permet de se connecter via le nom du réseau au lieu de l'adresse
+
 - Que se passerait-il si le volume n'etait pas reutilise apres recreation du conteneur MySQL ?
+Perte de données, et on doit refaire à chaque fois
 
 ## Criteres de validation
 
