@@ -29,8 +29,16 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Pourquoi la base de donnees n'a-t-elle pas besoin d'etre exposee vers l'hote dans cette architecture ?
+
+Parce que seule le conteneur web doit etre accessible à l'hote
+
 - En quoi le reseau personnalise simplifie-t-il la communication entre services ?
+
+Cela permet aux conteneurs de communiquer directement par leur nom drâce au DNS
+
 - Que se passerait-il si le volume n'etait pas reutilise apres recreation du conteneur MySQL ?
+
+Les données serait perdues. Le conteneur MySQL redémarrerait avec un espace de stockage vide.
 
 ## Criteres de validation
 
