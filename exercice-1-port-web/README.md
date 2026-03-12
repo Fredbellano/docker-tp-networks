@@ -22,8 +22,13 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Quelle est la difference entre le port hote et le port conteneur ?
+Le port conteneur est  service à l'intérieur,le port hôte est un port de la machine mappé vers le conteneur.
+
 - Pourquoi `EXPOSE` ne suffit-il pas a rendre le service accessible ?
+EXPOSE est documentaire, il faut `-p`/`--publish` pour créer le mapping hôte vers un conteneur.
+
 - Dans quel cas limiter l'ecoute a `127.0.0.1` est-il utile ?
+Quand on veut restreindre l'accès au host uniquement (développement, sécurité sur un hôte partagé).
 
 ## Criteres de validation
 

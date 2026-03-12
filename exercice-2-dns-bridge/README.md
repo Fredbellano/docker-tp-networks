@@ -21,8 +21,15 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Pourquoi l'utilisation d'un reseau personnalise est-elle recommandee pour des applications multi-conteneurs ?
+
+- Pourquoi l'utilisation d'un reseau personnalise est-elle recommandee pour des applications multi-conteneurs ?
+Pour l'isolation + découverte de services par nom, pas de mappage de ports entre services.
+
 - Quel avantage apporte le DNS interne Docker ?
+Résolution automatique des conteneurs par nom.
+
 - Que permet `docker network inspect` dans une phase de diagnostic ?
+De montrer les conteneurs connectés, leurs IP internes et les détails du réseau.
 
 ## Criteres de validation
 

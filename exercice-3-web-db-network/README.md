@@ -29,8 +29,11 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Pourquoi la base de donnees n'a-t-elle pas besoin d'etre exposee vers l'hote dans cette architecture ?
+Parce que la base de données n’a pas besoin d’être accessible directement depuis l’extérieur, seuls les services applicatifs doivent pouvoir s’y connecter comme web app.
 - En quoi le reseau personnalise simplifie-t-il la communication entre services ?
+Le réseau personnalisé fournit DNS + isolation + simplicité, ce qui simplifie fortement l’architecture multi‑conteneurs.
 - Que se passerait-il si le volume n'etait pas reutilise apres recreation du conteneur MySQL ?
+Perte de données ou encore réinitialisation automatique par exemple
 
 ## Criteres de validation
 
