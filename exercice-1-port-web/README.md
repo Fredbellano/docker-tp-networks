@@ -22,8 +22,16 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Quelle est la difference entre le port hote et le port conteneur ?
+
+Le port conteneur est le port utilisé par l'application dans le conteneur
+Le port hôte est le port le ma machine sur lequel docker redirige les requetes
+
 - Pourquoi `EXPOSE` ne suffit-il pas a rendre le service accessible ?
+
+EXPOSE donne juste une indication dans l'image. Ca n'ouvre pas le port
+
 - Dans quel cas limiter l'ecoute a `127.0.0.1` est-il utile ?
+
 
 ## Criteres de validation
 
