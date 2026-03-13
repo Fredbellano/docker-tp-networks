@@ -21,9 +21,9 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 
 ## Questions de reflexion
 
-- Quelle est la difference entre le port hote et le port conteneur ?
-- Pourquoi `EXPOSE` ne suffit-il pas a rendre le service accessible ?
-- Dans quel cas limiter l'ecoute a `127.0.0.1` est-il utile ?
+- Quelle est la difference entre le port hote et le port conteneur ? Le port du conteneur sert à dire à la machine hôte sur quel port récupérer les infos du conteneur et le port hôte permet d'exposer e contenu vers l'extérieur
+- Pourquoi `EXPOSE` ne suffit-il pas a rendre le service accessible ? Expose permet juste de libérer le port alors que -p permet de mapper le port directement
+- Dans quel cas limiter l'ecoute a `127.0.0.1` est-il utile ? Si on travaille en local car seule la machine hôte y a accès
 
 ## Criteres de validation
 
